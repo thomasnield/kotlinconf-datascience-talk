@@ -31,7 +31,7 @@ data class Driver(val driverNumber: Int,
                 .set(shiftStart, -1)
 
         //ensure coverage of entire day
-        model.addExpression("EnsureCoverage")
+        model.addExpression()
                 .level(operatingDayLength)
                 .apply {
                     drivers.forEach {
@@ -47,7 +47,7 @@ data class Driver(val driverNumber: Int,
                     .upper(it.endInclusive)
                     .set(shiftStart, 1)
 
-            model.addExpression("${driverNumber}EndAvailability")
+            model.addExpression()
                     .lower(it.start)
                     .upper(it.endInclusive)
                     .set(shiftEnd, 1)
