@@ -25,21 +25,23 @@ val products = listOf(Product(1, "Rayzeon", "A", 3, 1.1),
 
 fun main(args: Array<String>) {
 
+    // Data Class for Grouping
+    data class Key(val category: String, val section: Int)
 
-    // Get Count by Category
-    val countByCategory=
-            products.countBy { it.category }
+    // Get Count by Category and Section
+    val countByCategoryAndSection =
+            products.countBy { Key(it.category, it.section) }
 
-    println("Counts by Category")
-    countByCategory.entries.forEach { println(it) }
+    println("Counts by Category and Section")
+    countByCategoryAndSection.entries.forEach { println(it) }
 
-    // Get Average Defect Rate by Category
-    val averageDefectByCategory =
+    // Get Average Defect Rate by Category and Section
+    val averageDefectByCategoryAndSection =
             products.averageBy(
-                    keySelector = { it.category },
+                    keySelector = { Key(it.category, it.section) },
                     doubleSelector = { it.defectRate }
             )
 
-    println("\nAverage Defect Rate by Category")
-    averageDefectByCategory.entries.forEach { println(it) }
+    println("\nAverage Defect Rate by Category and Section")
+    averageDefectByCategoryAndSection.entries.forEach { println(it) }
 }
