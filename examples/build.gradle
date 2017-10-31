@@ -16,6 +16,8 @@ repositories {
 
 dependencies {
   compile 'org.jetbrains.kotlin:kotlin-stdlib:1.1.51'
-
+  compile 'org.ojalgo:ojalgo:44.0.0'
+  compile 'org.nield:kotlin-statistics:1.0.0'
+  compile 'no.tornado:tornadofx:1.7.12'
   testCompile 'junit:junit:4.12'
 }
