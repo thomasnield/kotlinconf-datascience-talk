@@ -1,3 +1,5 @@
+package examples
+
 import javafx.geometry.Orientation
 import javafx.scene.chart.NumberAxis
 import org.nield.kotlinstatistics.multiKMeansCluster

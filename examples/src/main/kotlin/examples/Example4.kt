@@ -1,3 +1,5 @@
+package examples
+
 import org.nield.kotlinstatistics.binByComparable
 import java.time.LocalDate
 import java.time.Month

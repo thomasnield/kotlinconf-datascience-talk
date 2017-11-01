@@ -1,4 +1,4 @@
-
+package examples
 fun main(args: Array<String>) {
 
     //Retrieve user "John"
@@ -26,12 +26,12 @@ data class SocialUser(
             friends.asSequence().filter { it in otherUser.friends }.toList()
 
     fun recommendedFriends() = users.asSequence()
-            .filter { it.userId != userId } // only look for other users
+            .filter { it.userId != userId } // only look for other examples.getUsers
             .filter { it !in friends } // filter to people not already friends with
             .map { otherUser -> // package up mutual friends
                 MutualFriendships(this, otherUser, mutualFriendsOf(otherUser).toList())
-            }.filter { it.mutualFriends.count() > 0 } // omit where no MutualFriendships exist
-            .sortedByDescending { it.mutualFriends.count() } // sort greatest number of mutual friendships first
+            }.filter { it.mutualFriends.count() > 0 } // omit where no examples.MutualFriendships exist
+            .sortedByDescending { it.mutualFriends.count() } // sort greatest number of mutual examples.getFriendships first
             .map { it.otherUser }
 }
 

@@ -2,10 +2,10 @@ import org.ojalgo.optimisation.ExpressionsBasedModel
 import org.ojalgo.optimisation.Variable
 import java.util.concurrent.atomic.AtomicInteger
 
-// declare model
+// declare scheduledemo.getModel
 val model = ExpressionsBasedModel()
 
-// custom DSL for model input
+// custom DSL for scheduledemo.getModel input
 val funcId = AtomicInteger(0)
 val variableId = AtomicInteger(0)
 fun variable() = Variable(variableId.incrementAndGet().toString().let { "Variable$it" }).apply(model::addVariable)
