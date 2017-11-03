@@ -1,11 +1,15 @@
 package examples
 
+import javafx.application.Application
 import javafx.geometry.Orientation
 import javafx.scene.chart.NumberAxis
 import org.nield.kotlinstatistics.multiKMeansCluster
 import tornadofx.*
 import java.time.LocalDate
 import java.time.temporal.ChronoUnit
+
+
+fun main(args: Array<String>) = Application.launch(MyApp::class.java, *args)
 
 class MyApp: App(MyView::class)
 
@@ -32,13 +36,13 @@ class MyView : View() {
                     xSelector = { it.age.toDouble() },
                     ySelector = { it.whiteBloodCellCount.toDouble() }
             )
-                    .forEachIndexed { index, centroid ->
-                        series("Group ${index + 1}") {
-                            centroid.points.forEach {
-                                data(it.age, it.whiteBloodCellCount)
-                            }
-                        }
+            .forEachIndexed { index, centroid ->
+                series("Group ${index + 1}") {
+                    centroid.points.forEach {
+                        data(it.age, it.whiteBloodCellCount)
                     }
+                }
+            }
         }
     }
 }

@@ -11,10 +11,9 @@ fun main(args: Array<String>) {
 
 // parameters
 val operatingDay = 6..22
-val operatingDayLength = operatingDay.endInclusive - operatingDay.start
 val allowableShiftSize = 4..6
 
-// Map scheduledemo.getDrivers by their ID for ad hoc retrieval
+// Map Drivers by their ID for ad hoc retrieval
 val drivers = listOf(
         Driver(driverNumber = 1, rate = 10.0),
         Driver(driverNumber = 2, rate = 12.0, availability = 6..11),

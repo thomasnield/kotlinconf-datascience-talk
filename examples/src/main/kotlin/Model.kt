@@ -11,6 +11,8 @@ val variableId = AtomicInteger(0)
 fun variable() = Variable(variableId.incrementAndGet().toString().let { "Variable$it" }).apply(model::addVariable)
 fun ExpressionsBasedModel.addExpression() = funcId.incrementAndGet().let { "Func$it"}.let { addExpression(it) }
 
+// constants
+val operatingDayLength = operatingDay.endInclusive - operatingDay.start
 
 
 // Driver class will put itself into the Model
