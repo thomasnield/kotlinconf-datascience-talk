@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
 val operatingDay = 6..22
 val allowableShiftSize = 4..6
 
-// Map Drivers by their ID for ad hoc retrieval
+// declare drivers
 val drivers = listOf(
         Driver(driverNumber = 1, rate = 10.0),
         Driver(driverNumber = 2, rate = 12.0, availability = 6..11),
