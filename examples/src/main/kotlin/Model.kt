@@ -2,10 +2,10 @@ import org.ojalgo.optimisation.ExpressionsBasedModel
 import org.ojalgo.optimisation.Variable
 import java.util.concurrent.atomic.AtomicInteger
 
-// declare scheduledemo.getModel
+// declare ojAlgo Model
 val model = ExpressionsBasedModel()
 
-// custom DSL for scheduledemo.getModel input
+// custom DSL for model expression inputs, eliminate naming and adding
 val funcId = AtomicInteger(0)
 val variableId = AtomicInteger(0)
 fun variable() = Variable(variableId.incrementAndGet().toString().let { "Variable$it" }).apply(model::addVariable)
@@ -15,7 +15,7 @@ fun ExpressionsBasedModel.addExpression() = funcId.incrementAndGet().let { "Func
 val operatingDayLength = operatingDay.endInclusive - operatingDay.start
 
 
-// Driver class will put itself into the Model
+// Driver class will put itself into the Model when addToModel() is called
 data class Driver(val driverNumber: Int,
                   val rate: Double,
                   val availability: IntRange? = null) {
