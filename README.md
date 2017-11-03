@@ -1,8 +1,6 @@
-# KotlinConf
+# KotlinConf Talk - Kotlin for Data Science
 
 ![](https://pbs.twimg.com/profile_images/875311308266188805/JIlOVrrC_400x400.jpg)
-
-## Kotlin for Data Science Resources
 
 Slides, notes, and code for the KotlinConf talk on Data Science
 
