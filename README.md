@@ -15,6 +15,6 @@ Slides, notes, and code for the _Kotlin for Data Science_ talk
 
 ## Resources
 
-I did not show this last slide during the presentation. I recommend checking these resources out, especially [3Blue1Brown on YouTube](https://www.youtube.com/watch?v=kjBOesZCoqc&index=1&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab). 
+I forgot to show this last slide during the presentation. I recommend checking these resources out, especially [3Blue1Brown on YouTube](https://www.youtube.com/watch?v=kjBOesZCoqc&index=1&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab). 
 
 ![](https://i.imgur.com/fkyuyvU.png)
