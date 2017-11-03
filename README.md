@@ -4,7 +4,7 @@
 
 Slides, notes, and code for the KotlinConf talk on Data Science
 
-## Relevant Links
+## Libraries Used in Demo
 
 [Kotlin-Statistics](https://github.com/thomasnield/kotlin-statistics)
 
