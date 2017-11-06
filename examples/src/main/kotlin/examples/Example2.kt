@@ -3,7 +3,7 @@ package examples
 import org.nield.kotlinstatistics.averageBy
 import org.nield.kotlinstatistics.countBy
 
-//declare examples.Product class
+//declare Product class
 class Product(val id: Int,
               val name: String,
               val category: String,
