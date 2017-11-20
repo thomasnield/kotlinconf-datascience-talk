@@ -26,6 +26,6 @@ I forgot to show this last slide during the presentation. I recommend checking t
 
 ![](https://i.imgur.com/fkyuyvU.png)
 
-If you are interested in mathematical optimization as shown in the driver example, this practical book is immensely helpful. 
+If you are interested in mathematical optimization as shown in the driver example, this book is immensely helpful. 
 
 [![](https://images-na.ssl-images-amazon.com/images/I/41Izv5XLv-L._SX330_BO1,204,203,200_.jpg)](http://a.co/ebpZBMo )
