@@ -4,6 +4,13 @@
 
 Slides, notes, and code for the _Kotlin for Data Science_ talk
 
+## YouTube Video
+
+You can watch the session at KotlinConf on YouTube here:
+
+[![KotlinConf- Kotlin for Data Science](https://i.ytimg.com/vi/J8GYPG6pt5w/hqdefault.jpg)](https://www.youtube.com/watch?v=J8GYPG6pt5w)
+
+
 ## Libraries Used in Demo
 
 [Kotlin-Statistics](https://github.com/thomasnield/kotlin-statistics)
