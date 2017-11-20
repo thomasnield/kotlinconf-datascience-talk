@@ -25,3 +25,7 @@ You can watch the session at KotlinConf on YouTube here:
 I forgot to show this last slide during the presentation. I recommend checking these resources out, especially [3Blue1Brown on YouTube](https://www.youtube.com/watch?v=kjBOesZCoqc&index=1&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab). 
 
 ![](https://i.imgur.com/fkyuyvU.png)
+
+If you are interested in mathematical optimization as shown in the driver example, I've been enjoying this book a lot as it approaches the subject practically. 
+
+[![](https://images-na.ssl-images-amazon.com/images/I/41Izv5XLv-L._SX330_BO1,204,203,200_.jpg)](http://a.co/ebpZBMo )
