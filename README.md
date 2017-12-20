@@ -29,3 +29,7 @@ I forgot to show this last slide during the presentation. I recommend checking t
 If you are interested in mathematical optimization as shown in the driver example, this book is immensely helpful. 
 
 [![](https://images-na.ssl-images-amazon.com/images/I/41Izv5XLv-L._SX330_BO1,204,203,200_.jpg)](http://a.co/ebpZBMo )
+
+I'm also working on a classroom scheduling example with ojAlgo. Feel free to [follow it here](https://github.com/thomasnield/mathematical-optimization-examples). 
+
+
