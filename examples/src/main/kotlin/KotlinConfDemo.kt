@@ -1,6 +1,8 @@
+
 fun main(args: Array<String>) {
 
-    drivers.forEach { it.addToModel() }
+    Driver.addToModel()
+
     model.minimise().let(::println)
 
     // see variables for each driver
