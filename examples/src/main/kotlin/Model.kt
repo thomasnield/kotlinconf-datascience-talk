@@ -15,13 +15,14 @@ fun ExpressionsBasedModel.addExpression() = funcId.incrementAndGet().let { "Func
 val operatingDayLength = operatingDay.endInclusive - operatingDay.start
 
 
+
 // Driver class will put itself into the Model when addToModel() is called
 data class Driver(val driverNumber: Int,
                   val rate: Double,
                   val availability: IntRange? = null) {
 
-    val shiftStart = variable().weight(rate).lower(6).upper(22)
-    val shiftEnd = variable().weight(rate).lower(6).upper(22)
+    val shiftStart = variable().lower(6).upper(22)
+    val shiftEnd = variable().lower(6).upper(22)
 
     fun addToModel() {
 
@@ -31,16 +32,6 @@ data class Driver(val driverNumber: Int,
                 .upper(allowableShiftSize.endInclusive)
                 .set(shiftEnd, 1)
                 .set(shiftStart, -1)
-
-        //ensure coverage of entire day
-        model.addExpression()
-                .level(operatingDayLength)
-                .apply {
-                    drivers.forEach {
-                        set(it.shiftEnd, 1)
-                        set(it.shiftStart, -1)
-                    }
-                }
 
         //add specific driver availability
         availability?.let {
@@ -75,6 +66,32 @@ data class Driver(val driverNumber: Int,
                             .set(otherDriver.shiftStart, -1)
                 }
     }
-}
 
+    companion object {
+
+        fun addToModel() {
+
+            //ensure coverage of entire day
+            model.addExpression()
+                    .level(operatingDayLength)
+                    .apply {
+                        drivers.forEach {
+                            set(it.shiftEnd, 1)
+                            set(it.shiftStart, -1)
+                        }
+                    }
+
+            // set objective
+            model.objective().apply {
+                drivers.forEach {
+                    set(it.shiftEnd, it.rate)
+                    set(it.shiftStart, -1 * it.rate)
+                }
+            }
+
+            
+            drivers.forEach { it.addToModel() }
+        }
+    }
+}
 
