@@ -82,7 +82,7 @@ data class Driver(val driverNumber: Int,
                     }
 
             // set objective
-            model.objective().apply {
+            model.addExpression().weight(1).apply {
                 drivers.forEach {
                     set(it.shiftEnd, it.rate)
                     set(it.shiftStart, -1 * it.rate)
