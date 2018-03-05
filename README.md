@@ -22,14 +22,7 @@ You can watch the session at KotlinConf on YouTube here:
 
 ## Resources
 
-I forgot to show this last slide during the presentation. I recommend checking these resources out, especially [3Blue1Brown on YouTube](https://www.youtube.com/watch?v=kjBOesZCoqc&index=1&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab). 
-
-![](https://i.imgur.com/fkyuyvU.png)
-
-If you are interested in mathematical optimization as shown in the driver example, this book is immensely helpful. 
-
-[![](https://images-na.ssl-images-amazon.com/images/I/41Izv5XLv-L._SX330_BO1,204,203,200_.jpg)](http://a.co/ebpZBMo )
-
-I'm also working on a classroom scheduling example with ojAlgo. Feel free to [follow it here](https://github.com/thomasnield/mathematical-optimization-examples). 
+Follow this Awesome-like curation of Kotlin Data Science resources here:
+https://github.com/thomasnield/kotlin-data-science-resources
 
 
