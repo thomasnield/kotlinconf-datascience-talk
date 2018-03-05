@@ -23,6 +23,7 @@ You can watch the session at KotlinConf on YouTube here:
 ## Resources
 
 Follow this Awesome-like curation of Kotlin Data Science resources here:
+
 https://github.com/thomasnield/kotlin-data-science-resources
 
 
